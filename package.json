@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "1",
+    "dev": "ts-node src/main.ts",
     "migrate:latest": "knex migrate:latest --knexfile knexfile.ts",
     "migrate:rollback": "knex migrate:rollback --knexfile knexfile.ts"
   },
@@ -16,6 +16,7 @@
     "@types/express": "^5.0.0",
     "@types/express-validator": "^2.20.33",
     "@types/knex": "^0.15.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   },
   "dependencies": {

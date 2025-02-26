@@ -1,5 +1,6 @@
 import { Application } from "express";
 import { body } from "express-validator/lib/middlewares/validation-chain-builders";
+import { AUTH } from "../../routes/routes.json"
 import { createUserController } from "../controllers/create_user_controller";
 
 export const createUserRouter = (app: Application) => {
